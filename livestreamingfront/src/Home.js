@@ -27,7 +27,7 @@ function Home() {
 		    { video.videos?.length > 0 && video.videos.map((each, index)=>{
 		      return (
               <div>  
-                <Link to={'/Playvideo/'+each}> <video width="380" height="280" style={{ marginLeft:"150px"}}>
+                <Link target="_blank" to={'/Playvideo/'+each}> <video width="380" height="280" style={{ marginLeft:"150px"}}>
                     <source src={`http://localhost:5000/${each}`} type="video/mp4"/>
                 </video> </Link> 
               </div>
